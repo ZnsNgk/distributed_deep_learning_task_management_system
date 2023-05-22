@@ -1,0 +1,51 @@
+# 指令结构
+
+采用字典结构存储和发送，其结构为{"mode": mode, "ui": ui_info, "info": msg}
+其中，mode为指令，info为指令附带的信息，ui为返回时将信息返回的界面名
+
+
+# 指令列表
+
+# 单向指令
+mon                 #监视节点信息       (服务端->客户端)
+task_mon            #监控所有任务状态   (服务端->客户端)
+
+# 交互指令
+env_list            #获取环境列表       (客户端->服务端)
+ret_env_list        #返回环境列表       (服务端->客户端)
+test_env            #测试的环境         (客户端->服务端)
+ret_test_env        #返回环境测试结果   (服务端->客户端)
+py_v                #查看python版本     (客户端->服务端)
+ret_py_v            #返回python版本     (服务端->客户端)
+cuda_pt             #查看pytorch的cuda情况(客户端->服务端)
+ret_cuda_pt         #返回pytorch的cuda结果(服务端->客户端)
+cuda_tf             #查看tensorflow的cuda情况(客户端->服务端)
+ret_cuda_tf         #返回tensorflow的cuda结果(服务端->客户端)
+pkgs                #查看当前环境下的包  (客户端->服务端)
+ret_pkgs            #返回当前环境下的包  (服务端->客户端)
+get_folder          #获取文件夹下的所有文件(客户端->服务端)
+ret_folder          #返回文件夹下的所有文件(服务端->客户端)
+get_file            #获取文件内容       (客户端->服务端)
+ret_file            #返回文件内容       (服务端->客户端)
+save_file           #保存文件           (客户端->服务端)
+ret_save_file       #返回保存结果       (服务端->客户端)
+file_operate        #文件操作(新建文件夹、新建文件、重命名)(客户端->服务端)
+ret_file_operate    #返回文件操作结果   (服务端->客户端)
+rm_file             #删除单个文件或文件夹(客户端->服务端)
+ret_rm_file         #返回删除结果       (服务端->客户端)
+add_task            #添加任务           (客户端->服务端)
+ret_add_task        #返回添加结果       (服务端->客户端)
+change_task         #修改任务           (客户端->服务端)
+ret_change_task     #返回修改结果       (服务端->客户端)
+del_task            #删除任务           (客户端->服务端)
+ret_del_task        #返回删除结果       (服务端->客户端)
+resub_task          #重新提交任务       (客户端->服务端)
+ret_resub_task      #返回重新提交结果   (服务端->客户端)
+get_root            #获得根目录         (客户端->服务端)
+ret_root            #返回根目录         (服务端->客户端)
+stop_task           #停止任务           (客户端->服务端)
+ret_stop_task       #返回停止结果         (服务端->客户端)
+get_train_log_path  #获取训练任务的日志路径(客户端->服务端)
+ret_train_log_path  #返回训练日志路径    (服务端->客户端)
+get_server_log      #获取服务端日志路径 (客户端->服务端)
+ret_server_log      #返回服务端日志路径 (服务端->客户端)

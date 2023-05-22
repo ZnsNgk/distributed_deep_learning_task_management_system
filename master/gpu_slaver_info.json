@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Slaver1",
+        "ip": "192.168.1.2",
+        "user_name": "xxx",
+        "gpu_count": 8,
+        "gpu_info": ["RTX4090", "RTX4090", "RTX4090", "RTX4090", "RTX4090", "RTX4090","RTX4090", "RTX4090"]
+    }
+]

@@ -1,0 +1,10 @@
+{
+    "IP": "192.168.1.1",
+    "username": "xxx",
+    "psw": "12345678",
+    "ssh_port": 22,
+    "monitor_port": 12345,
+    "data_port": 12346,
+    "train_state_port": 12347,
+    "buffer": 1048576
+}
