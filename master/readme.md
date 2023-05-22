@@ -36,7 +36,7 @@ apt-get install ssh
 
 系统使用master-slaver架构，系统中存在一个master节点和多个slaver节点。其中，slaver节点包含了GPU计算节点和数据节点两种。此外，数据节点也可以由master节点承担。以下为系统架构图：
 
-![image](./imgs/img1.png)
+![image](./imgs/img1.jpg)
 
 为了确保数据传输速度，系统内部采用万兆局域网连接。通过实验发现，若无搭建万兆局域网的条件，千兆局域网也能够满足要求，但是可能存在性能衰减。需要注意的是，slaver节点只负责计算或数据存储操作，不需要直接和外部网络连接。
 
