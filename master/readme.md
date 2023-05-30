@@ -60,7 +60,9 @@ apt-get install ssh
 
 6）在master和所有计算节点测试conda是否能成功使用，并测试data文件夹是否正常；
 
-7）在master节点安装samba服务，并添加envs和data，从而实现在外部访问。
+7）在master节点安装samba服务，并添加envs和data，从而实现在外部访问；
+
+8）将该目录中的`envs`文件夹内的`get_info.py`，`check_cuda_pt.py`和`check_cuda_tf.py`三个文件移动到新创建的`envs`文件夹内。
 
 在后续的操作中，只需要将自己的环境拷贝至“~/envs/miniconda3/envs/”中即可使用。并可以通过“conda activate <your_env>”来测试环境是否可用，也可以在系统对你添加的环境进行测试。
 
